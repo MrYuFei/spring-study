@@ -1,0 +1,16 @@
+1.通过https://start.spring.io/  Spring Initializr生成骨架
+2.curl简单用法
+3.actuator简单用法  eg:curl http://localhost:8080/actuator/health
+4.mvn clean package -Dmaven.test.skip 打的是可执行的jar包 java -jar *.jar
+5.需要自定义的parent 
+    需要修改一下pom文件即可
+      <dependencyManagement>
+        <dependencies>
+          <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-dependencies</artifactId>
+            <type>pom</type>
+            <scope>import</scope>
+          </dependency>
+         </dependencies>
+      </dependencyManagement>
