@@ -1,0 +1,8 @@
+1.单数据源的配置-->使用到的是H2内存数据源，
+2.了解到了开发工具的插件 a.pom文件依赖关系 ->https://plugins.jetbrains.com/plugin/7179-maven-helper (idea插件)
+                       b.https://github.com/tulios/json-viewer  json中的actuator/beans是按字母排序的  直接通过Chrome的商店安装的
+                       c.Lombok插件 (idea插件)
+spring.output.ansi.enabled=ALWAYS 让控制台输出时始终是有颜色的
+schema.sql是用于建表的，data.sql是用于插入数据的 (Spring Boot的自动配置在启动过程中执行的)
+management.endpoints.web.exposure.include=*  
+会把所有Endpoint都暴露在Web上，这样大家就能访问到/health以外的Endpoint 暴露了一些默认不在Web暴露的Endpoint，这些默认只以JMX方式暴露
