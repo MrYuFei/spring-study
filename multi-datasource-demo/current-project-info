@@ -9,3 +9,4 @@
       DataSourceAutoConfiguration
       DataSourceTransactionManagerAutoConfiguration
       JdbcTemplateAutoConfiguration 
+了解并掌握AbstarctRoutingDataSource
